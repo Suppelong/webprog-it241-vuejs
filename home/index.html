@@ -1,22 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My first Vue page</title>
-  <link rel="stylesheet" href="css/style.css?version=0.1">">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Webpage - Beejay A. Carpio</title>
+    
+    <link rel="stylesheet" href="css/style.css?version=0.2">
 </head>
 <body>
 
-<h1>Vue Example</h1>
+    <div id="app">
 
-<p>The message is taken from 'data' inside the Vue instance by writing {{ message }} inside the div with id="app".</p>
+        <p style="text-align: center; background-color: #f0f0f0; padding: 5px; margin: 0;">
+            Vue Message Status: <strong>{{ message }}</strong>
+        </p>
 
-<div id="app">
-  {{ message }}
-</div>
+        <div class="grid-container">
+            
+            <div class="header">
+                <h1>My Personal Webpage - Beejay A. Carpio</h1>
+            </div>
+            
+            <div class="menu">
+                <ul>
+                    <li>Education/Achievements</li>
+                    <li>Course</li>
+                    <li>IT Experience</li>
+                    <li>Hobbies & Interests</li>
+                </ul>
+            </div>
+            
+            <div class="content">
+                <h1>About Me</h1>
+                <p><strong>Education:</strong> Currently taking Bachelors Degree in Information Technology</p>
+                <p><strong>Course:</strong> Bachelors of Science in Information Technology</p>
+                <p><strong>Hobbies and Interests:</strong></p>
+                <ul>
+                    <li>Playing games online and offline.</li>
+                    <li>Watching sitcoms and movies.</li>
+                </ul> </div>
+            
+            <div class="facts">
+                <h2>Goals In Life / Dream:</h2>
+                <ul>
+                    <li>I want to be a successful Network Infrastructure Engineer</li>
+                    <li>To travel the world</li>
+                </ul>
+                <p><strong>IT Experience:</strong></p>
+                <ul>
+                    <li>Flappy Dragon</li>
+                    <li>BorrowIT</li>
+                    <li>Dropstock Shoe Reselling Website</li>
+                </ul>
+            </div>
+            
+            <div class="footer">
+                <p>Picture Gallery</p>
+                <img src="https://as-prod.asyncgw.teams.microsoft.com/v1/objects/0-jhb-d7-2be872b79a23653b7211b1021b295f6a/views/imgpsh_fullsize" 
+                     alt="Gallery Image" 
+                     style="max-width: 100%; height: auto;">
+            </div>
 
-<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-
-<script src="js/vue.js"></script>             
+        </div> </div> <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    
+    <script src="js/vue.js"></script>
 
 </body>
 </html>
