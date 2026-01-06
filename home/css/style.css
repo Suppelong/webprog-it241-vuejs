@@ -6,17 +6,29 @@
 body {
   font-family: "Lucida Sans", sans-serif;
   font-size: 17px;
-  margin: 0; /* Removing default browser margin */
+  margin: 0;
 }
 
 /* --- VUE APP WRAPPER --- */
-/* This wraps your entire page content now */
 #app {
-  display: block; /* Changed from inline-block so it fits the full screen width */
+  display: block;
   padding: 10px;
-  background-color: lightgreen; /* This helps you see that Vue is controlling the area */
-  /* Note: font-size here might make text huge, but specific classes below override it */
-  font-size: x-large; 
+  background-color: lightgreen;
+  font-size: x-large;
+}
+
+/* --- GALLERY IMAGE STYLES (Moved from HTML) --- */
+.gallery-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin: 5px;
+  border: 2px solid white;
+}
+
+#app2 img {
+  width: 80px;
+  margin: 5px;
 }
 
 /* --- GRID LAYOUT --- */
@@ -30,7 +42,7 @@ body {
     'footer';
   background-color: white;
   gap: 10px;
-  padding: 10px; /* Optional: adds space inside the white container */
+  padding: 10px;
 }
 
 .header {
@@ -42,7 +54,7 @@ body {
 
 .header > h1 {
   font-size: 40px;
-  margin: 20px 0; /* Added margin for better spacing */
+  margin: 20px 0;
 }
 
 .menu {
@@ -60,7 +72,7 @@ body {
   margin-bottom: 7px;
   background-color: #33b5e5;
   color: #ffffff;
-  font-size: 17px; /* Resetting font size so menu isn't 'x-large' */
+  font-size: 17px;
 }
 
 .menu li:hover {
@@ -70,7 +82,7 @@ body {
 
 .content {
   grid-area: main;
-  font-size: 17px; /* Resetting font size for content */
+  font-size: 17px;
 }
 
 .content > h1 {
@@ -87,7 +99,7 @@ body {
   border: 1px solid #0099cc;
   background-color: beige;
   padding: 10px;
-  font-size: 17px; /* Resetting font size for facts */
+  font-size: 17px;
 }
 
 .facts > h2 {
