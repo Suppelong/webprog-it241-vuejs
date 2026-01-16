@@ -21,7 +21,7 @@
 
     <header class="text-center text-white">
         <div class="container">
-            <h1 class="display-4 fw-bold">Hello, I'm Beejay Carpio</h1>
+            <h1 class="display-4 fw-bold">Hello, I am Beejay Carpio</h1>
             <p class="lead">IT Student | Gamer | Creative Thinker</p>
             <a href="#projects" class="btn btn-outline-light mt-3 rounded-pill px-4">View My Work</a>
         </div>
