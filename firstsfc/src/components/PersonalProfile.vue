@@ -179,8 +179,6 @@
 </template>
 
 <script>
-// IMPORTANT: Notice there are NO image imports here.
-// Only the CSS import is allowed.
 import './style.css';
 
 export default {
@@ -193,7 +191,6 @@ export default {
       message: '',
       submitted: false,
       
-      // We use strings for paths, NOT imported variables
       projectImages: [
         { src: '/images/BorrowIT.png', title: 'BorrowIT', alt: 'BorrowIT App', caption: 'Item borrowing system.' },
         { src: '/images/DropStock.png', title: 'DropStock', alt: 'DropStock System', caption: 'Sneaker reselling platform.' },
