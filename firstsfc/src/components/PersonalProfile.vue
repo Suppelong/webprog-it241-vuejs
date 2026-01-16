@@ -179,7 +179,7 @@
 </template>
 
 <script>
-// FIX: Use one dot (./) because style.css is in the SAME folder
+
 import './style.css';
 
 export default {
@@ -192,6 +192,7 @@ export default {
       message: '',
       submitted: false,
       
+      // Images are referenced as strings here
       projectImages: [
         { src: '/images/BorrowIT.png', title: 'BorrowIT', alt: 'BorrowIT App', caption: 'Item borrowing system.' },
         { src: '/images/DropStock.png', title: 'DropStock', alt: 'DropStock System', caption: 'Sneaker reselling platform.' },
@@ -227,4 +228,5 @@ export default {
 </script>
 
 <style scoped>
+/* Styles are in style.css */
 </style>
