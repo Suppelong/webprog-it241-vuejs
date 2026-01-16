@@ -179,8 +179,8 @@
 </template>
 
 <script>
-// FIX 1: The two dots (..) mean "go up one folder to find style.css"
-import '../style.css';
+// FIX: Use one dot (./) because style.css is in the SAME folder
+import './style.css';
 
 export default {
   name: 'PersonalProfile',
@@ -199,7 +199,6 @@ export default {
       ],
       
       personalImages: [
-        // Make sure these names match your files EXACTLY (case sensitive!)
         { src: '/images/college friends 1.jpg', title: 'College Friends', alt: 'College friends', caption: 'Hanging out with the college crew.' },
         { src: '/images/college friends 2.jpg', title: 'Good Times', alt: 'More college friends', caption: 'Making memories at school.' },
         { src: '/images/family photo 1.jpg', title: 'Family', alt: 'Family photo', caption: 'Family celebration.' }

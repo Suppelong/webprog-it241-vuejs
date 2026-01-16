@@ -15,7 +15,6 @@
     100% { background-position: 0% 50%; }
 }
 
-/* Note: 'body' styles might affect the whole app. scoped styles are safer, but this works for a single-page profile */
 .profile-page {
     font-family: 'Poppins', sans-serif;
     color: #333;
