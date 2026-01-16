@@ -8,46 +8,31 @@
 
     <header class="text-center text-white">
         <div class="container">
-            <h1 class="display-4 fw-bold">Profile Fixed!</h1> 
+            <h1 class="display-4 fw-bold">IT IS FIXED!</h1>
             <p class="lead">IT Student | Gamer | Creative Thinker</p>
         </div>
     </header>
 
-    <section id="about" class="py-5">
+    <section class="py-5">
         <div class="container">
-            <div class="row align-items-center bg-white p-5 rounded shadow-sm">
-                <div class="col-lg-4 text-center mb-4 mb-lg-0">
-                    <img src="/images/Beejay.jpg" alt="Beejay Carpio" class="img-fluid rounded-circle profile-img shadow">
-                </div>
-                <div class="col-lg-8">
-                    <h2 class="fw-bold mb-3 text-primary">About Me</h2>
-                    <p class="text-secondary lh-lg">
-                        I am currently pursuing a Bachelor’s degree in Information Technology at Asia Pacific College.
-                    </p>
-                </div>
-            </div>
+             <div class="bg-white p-5 rounded shadow-sm">
+                <h2>About Me</h2>
+                <p>I am an IT student at Asia Pacific College.</p>
+             </div>
         </div>
     </section>
   </div>
 </template>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-
 :root {
-    --primary-color: #0d6efd; 
-    --accent-color: #18bc9c;  
-    --secondary-color: #6c757d;
+    --primary-color: #0d6efd;
     --dark-bg: #212529;
-    --light-bg: #eff2f7; 
-    --card-bg: #ffffff;
 }
 
 .profile-page {
-    font-family: 'Poppins', sans-serif;
-    color: #333;
-    background: linear-gradient(-45deg, #1a2980, #26d0ce, #1e3c72, #2a5298);
-    background-size: 400% 400%;
+    font-family: sans-serif;
+    background: linear-gradient(-45deg, #1a2980, #26d0ce);
     min-height: 100vh;
 }
 
@@ -57,19 +42,11 @@
 }
 
 header {
-    background: #1a1a2e; 
-    padding: 120px 0 100px;
+    background: #1a1a2e;
+    padding: 100px 0;
 }
 
 .bg-white {
-    background-color: rgba(255, 255, 255, 0.92) !important; 
-    border-radius: 15px; 
-}
-
-.profile-img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    border: 5px solid white;
+    background-color: white;
 }
 </style>
