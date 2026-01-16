@@ -179,8 +179,7 @@
 </template>
 
 <script>
-// IMPORTANT: NO imports here except standard Vue stuff if needed.
-// NO image imports!
+// IMPORTANT: No external CSS imports. No image imports.
 export default {
   name: 'PersonalProfile',
   data() {
@@ -431,4 +430,29 @@ footer {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.9);
-    z-index: 999
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    backdrop-filter: blur(5px);
+}
+
+.modal-image {
+    max-width: 95%;
+    max-height: 90vh;
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    border: 2px solid white;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+    z-index: 10000;
+}
+</style>
