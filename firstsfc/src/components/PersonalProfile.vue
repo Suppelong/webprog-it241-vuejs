@@ -38,7 +38,7 @@
                     <p class="text-secondary lh-lg">
                         I am currently pursuing a Bachelor’s degree in Information Technology at Asia Pacific College. 
                         In my free time, I enjoy playing both offline and online games. I also have a passion for reading 
-                        manga, manhwa, and light novels, which fuel my creativity and imagination.
+                        manga, manhwa, and light novels.
                     </p>
                     
                     <div class="d-flex mt-4 gap-4">
@@ -179,7 +179,6 @@
 </template>
 
 <script>
-// Import the external CSS file (located in the same folder)
 import './style.css';
 
 export default {
@@ -191,20 +190,20 @@ export default {
       name: '',
       message: '',
       submitted: false,
+      
+      // PROJECT IMAGES
       projectImages: [
-        { src: '/images/BorrowIT.png', title: 'BorrowIT', alt: 'BorrowIT App', caption: 'An item borrowing management system made for ITRO department.' },
+        { src: '/images/BorrowIT.png', title: 'BorrowIT', alt: 'BorrowIT App', caption: 'Item borrowing system.' },
         { src: '/images/DropStock.png', title: 'DropStock', alt: 'DropStock System', caption: 'Sneaker reselling platform.' },
-        { src: '/images/How to Code your Dragon.png', title: 'How to Code Your Dragon', alt: 'Coding Game', caption: 'A game that is similar to flappy bird.' }
+        { src: '/images/How to Code your Dragon.png', title: 'How to Code Your Dragon', alt: 'Coding Game', caption: 'Flappy bird clone.' }
       ],
+      
+      // PERSONAL IMAGES
       personalImages: [
         { src: '/images/college friends 1.jpg', title: 'College Friends', alt: 'College friends', caption: 'Hanging out with the college crew.' },
         { src: '/images/college friends 2.jpg', title: 'Good Times', alt: 'More college friends', caption: 'Making memories at school.' },
-        { src: '/images/college friends 3.jpg', title: 'Outside the Campus', alt: 'Campus friends', caption: 'Gathering outside the campus.' },
-        { src: '/images/college friends 4.jpg', title: 'Group Photo', alt: 'Study group', caption: 'Socit event photo booth with the gang.' },
-        { src: '/images/college friends 5.jpg', title: 'Classmates', alt: 'Classmates', caption: 'Fruit of hardwork.' },
-        { src: '/images/family photo 1.jpg', title: 'Family', alt: 'Family photo', caption: 'Family new year celebration.' },
-        { src: '/images/family photo 2.jpg', title: 'Family Dinner', alt: 'Family trip', caption: 'Family dinner with family.' },
-        { src: '/images/sibling photo.jpg', title: 'Siblings', alt: 'With my sibling', caption: 'A photo with my sibling.' }
+        { src: '/images/family photo 1.jpg', title: 'Family', alt: 'Family photo', caption: 'Family celebration.' }
+        // Note: You can add more lines here if you have more photos like 'college friends 3.jpg'
       ]
     }
   },
