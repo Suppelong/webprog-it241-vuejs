@@ -1,10 +1,14 @@
 <template>
   <h1>Food</h1>
   <food-item/>
-  <personal-profile/>
+  <profile/>
   <food-item2/>
 </template>
 
-<script></script>
+<script>
+// No script needed here for this simple setup
+</script>
 
-<style></style>
+<style>
+/* Global styles can go here */
+</style>
