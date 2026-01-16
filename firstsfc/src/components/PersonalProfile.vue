@@ -179,6 +179,8 @@
 </template>
 
 <script>
+// !!! IMPORTANT: DO NOT ADD 'import ... from /images/...' !!!
+// Using the string path in data() below is enough.
 import './style.css';
 
 export default {
@@ -191,19 +193,16 @@ export default {
       message: '',
       submitted: false,
       
-      // PROJECT IMAGES
       projectImages: [
         { src: '/images/BorrowIT.png', title: 'BorrowIT', alt: 'BorrowIT App', caption: 'Item borrowing system.' },
         { src: '/images/DropStock.png', title: 'DropStock', alt: 'DropStock System', caption: 'Sneaker reselling platform.' },
         { src: '/images/How to Code your Dragon.png', title: 'How to Code Your Dragon', alt: 'Coding Game', caption: 'Flappy bird clone.' }
       ],
       
-      // PERSONAL IMAGES
       personalImages: [
         { src: '/images/college friends 1.jpg', title: 'College Friends', alt: 'College friends', caption: 'Hanging out with the college crew.' },
         { src: '/images/college friends 2.jpg', title: 'Good Times', alt: 'More college friends', caption: 'Making memories at school.' },
         { src: '/images/family photo 1.jpg', title: 'Family', alt: 'Family photo', caption: 'Family celebration.' }
-        // Note: You can add more lines here if you have more photos like 'college friends 3.jpg'
       ]
     }
   },
