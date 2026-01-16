@@ -179,7 +179,6 @@
 </template>
 
 <script>
-// IMPORTANT: No external CSS imports. No image imports.
 export default {
   name: 'PersonalProfile',
   data() {
@@ -225,7 +224,6 @@ export default {
 </script>
 
 <style>
-/* CSS RULES MOVED HERE */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 :root {
