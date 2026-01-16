@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --primary-color: #0d6efd; 
+    --accent-color: #18bc9c;  
+    --secondary-color: #6c757d;
+    --dark-bg: #212529;
+    --light-bg: #eff2f7; 
+    --card-bg: #ffffff;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Note: 'body' styles might affect the whole app. scoped styles are safer, but this works for a single-page profile */
+.profile-page {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.7;
+    background: linear-gradient(-45deg, #1a2980, #26d0ce, #1e3c72, #2a5298);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    min-height: 100vh;
+}
+
+.navbar {
+    background-color: #1a1a2e !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    font-weight: 400;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+header {
+    background: #1a1a2e; 
+    padding: 120px 0 100px;
+    margin-bottom: 0;
+    border-bottom: 5px solid rgba(255,255,255,0.1);
+}
+
+section {
+    position: relative;
+    scroll-margin-top: 70px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-bottom: 2rem;
+}
+
+.bg-white, .bg-light, #about, #education, #projects, #personal, #guestbook {
+    background-color: rgba(255, 255, 255, 0.92) !important; 
+    backdrop-filter: blur(5px);
+    border-radius: 15px; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important;
+}
+
+#education.bg-light, #personal.bg-white {
+    background-color: transparent !important;
+}
+
+#education .container, #personal .container, #projects .container, #guestbook .container {
+    background-color: rgba(255, 255, 255, 0.92);
+    padding: 3rem;
+    border-radius: 15px;
+}
+
+.section-title {
+    color: #1a1a2e;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    display: inline-block;
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+
+.profile-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: 5px solid white;
+}
+
+.project-card {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: white; 
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+}
+
+.img-wrapper {
+    overflow: hidden;
+    height: 220px;
+}
+
+.card-img-top {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #1a1a2e;
+    margin-top: 3rem;
+}
+
+.social-icons a {
+    color: white;
+    background-color: rgba(255,255,255,0.1);
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+.timeline {
+    border-left: 3px solid var(--primary-color);
+    margin-left: 10px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -39px; 
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border: 3px solid var(--accent-color);
+    border-radius: 50%;
+}
+
+.timeline-year {
+    color: var(--accent-color);
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.timeline-school {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+.timeline-degree {
+    font-style: italic;
+    color: var(--secondary-color);
+    margin-bottom: 0;
+}
+
+/* Modal Styles */
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    backdrop-filter: blur(5px);
+}
+
+.modal-image {
+    max-width: 95%;
+    max-height: 90vh;
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    border: 2px solid white;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+    z-index: 10000;
+}
