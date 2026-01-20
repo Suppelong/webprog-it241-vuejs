@@ -281,4 +281,100 @@ export default {
 };
 </script>
 
-<style src="@/style.css"></style>
+<style scoped>
+/* HEADER & GLOBAL */
+header {
+  /* Ensure you have a background.jpg in public/images/ or remove the url() part */
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/background.jpg');
+  background-color: #212529;
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+}
+
+.navbar {
+  background-color: #333;
+}
+
+footer {
+  background-color: #212529;
+}
+
+/* TIMELINE STYLES */
+.timeline {
+  position: relative;
+  padding-left: 30px;
+  border-left: 2px solid #dee2e6;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -36px;
+  top: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #0d6efd;
+  border: 2px solid #fff;
+}
+
+.timeline-year {
+  font-size: 0.9rem;
+  color: #6c757d;
+  font-weight: bold;
+}
+
+.timeline-school {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+/* UTILITIES & CURSOR */
+.cursor-pointer {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.cursor-pointer:hover {
+  transform: translateY(-5px);
+}
+
+/* MODAL STYLES */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.modal-image {
+  max-width: 90%;
+  max-height: 90vh;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 2001;
+}
+</style>
