@@ -1,5 +1,6 @@
 <template>
   <div class="profile-page">
+    
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
       <div class="container">
         <a class="navbar-brand" href="#">Beejay Carpio</a>
@@ -210,3 +211,74 @@
           <a href="https://www.facebook.com/beejay.carpio" target="_blank" class="mx-2 text-white">
             <i class="bi bi-facebook fs-4"></i>
           </a>
+          <a href="https://www.instagram.com/bjycrp" target="_blank" class="mx-2 text-white">
+            <i class="bi bi-instagram fs-4"></i>
+          </a>
+        </div>
+        <hr class="border-secondary w-50 mx-auto my-4 opacity-25" />
+        <p class="small text-white-50 mb-2">&copy; 2026 Beejay Carpio. All Rights Reserved.</p>
+        <p class="small">
+          <a href="resources.html" class="text-white-50 text-decoration-none">View Resource Documentation</a>
+        </p>
+      </div>
+    </footer>
+
+    <div v-if="modalVisible" class="modal-overlay" @click="closeModal">
+      <span class="close-btn" @click="closeModal">&times;</span>
+      <img :src="currentImage" class="modal-image" @click.stop alt="Full screen view" />
+    </div>
+
+  </div> 
+  </template>
+
+<script>
+export default {
+  name: 'Profile',
+  data() {
+    return {
+      modalVisible: false,
+      currentImage: '',
+      guestbook: {
+        name: '',
+        message: '',
+        submitted: false
+      },
+      projectImages: [
+        { src: '/images/BorrowIT.png', title: 'BorrowIT', alt: 'BorrowIT App', caption: 'An item borrowing management system made for ITRO department.' },
+        { src: '/images/DropStock.png', title: 'DropStock', alt: 'DropStock System', caption: 'Sneaker reselling platform.' },
+        { src: '/images/How to Code your Dragon.png', title: 'How to Code Your Dragon', alt: 'Coding Game', caption: 'A game that is similar to flappy bird.' }
+      ],
+      personalImages: [
+        { src: '/images/college friends 1.jpg', title: 'College Friends', alt: 'College friends', caption: 'Hanging out with the college crew.' },
+        { src: '/images/college friends 2.jpg', title: 'Good Times', alt: 'More college friends', caption: 'Making memories at school.' },
+        { src: '/images/college friends 3.jpg', title: 'Outside the Campus', alt: 'Campus friends', caption: 'Gathering outside the campus.' },
+        { src: '/images/college friends 4.jpg', title: 'Group Photo', alt: 'Study group', caption: 'Socit event photo booth with the gang.' },
+        { src: '/images/college friends 5.jpg', title: 'Classmates', alt: 'Classmates', caption: 'Fruit of hardwork.' },
+        { src: '/images/family photo 1.jpg', title: 'Family', alt: 'Family photo', caption: 'Family new year celebration.' },
+        { src: '/images/family photo 2.jpg', title: 'Family Dinner', alt: 'Family trip', caption: 'Family dinner with family.' },
+        { src: '/images/sibling photo.jpg', title: 'Siblings', alt: 'With my sibling', caption: 'A photo with my sibling.' }
+      ]
+    };
+  },
+  methods: {
+    openModal(src) {
+      this.currentImage = src;
+      this.modalVisible = true;
+    },
+    closeModal() {
+      this.modalVisible = false;
+      this.currentImage = '';
+    },
+    submitForm() {
+      this.guestbook.submitted = true;
+      setTimeout(() => {
+        this.guestbook.submitted = false;
+        this.guestbook.name = '';
+        this.guestbook.message = '';
+      }, 3000);
+    }
+  }
+};
+</script>
+
+<style src="../style.css"></style>
